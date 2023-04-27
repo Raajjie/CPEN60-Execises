@@ -1,3 +1,5 @@
+# Write a program to find all four solutions to the following problem: If a starfruit is worth $5, a mango is worth $3, and three oranges together cost $1, how many starfruits, mangoes, and oranges, totaling 100, can be bought for $100?
+
 def find_solutions():
     for starfruits in range(21):
         for mangoes in range(34):
