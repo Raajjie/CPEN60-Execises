@@ -1,0 +1,7 @@
+x = int(input("X is a number from 1 to 3:"))
+y = int(input("Y is a number from 4 to 6:"))
+z = int(input("Z is a number from 7 to 9:"))
+
+x, y, z = y, z, x
+
+print("X is:", x, ",", "Y is:", y, ",", "Z is:", z)
