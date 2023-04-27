@@ -1,0 +1,12 @@
+credit = int(input("Credits taken:"))
+
+if 0 < credit <= 23:
+    print("The student is a freshman")
+elif 23 < credit < 54:
+    print("The student is a sophomore")
+elif 53 < credit < 84:
+    print("The student is a junior")
+elif 83 < credit < 121:
+    print("The student is a senior")
+else:
+    print("Out of range")
