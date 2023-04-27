@@ -1,0 +1,6 @@
+my_name = str("Sherlywin V. Bongalon")
+num = 0
+
+for i in range(100):  # Use for loop to iterate the name 100 times
+    num += 1          # Use assignment operator to visualize the number of names
+    print(num, my_name)
