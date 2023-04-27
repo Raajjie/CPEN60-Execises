@@ -1,0 +1,7 @@
+length_cm = float(input("Enter length in centimeter:"))
+
+if length_cm < 0:
+    print("Invalid input.")
+else:
+    length_inch = length_cm * 2.54  # Convert centimeter to inches
+    print("Length in inches:", round(length_inch, 2))
