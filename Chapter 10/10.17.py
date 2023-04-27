@@ -1,3 +1,8 @@
+# Write a program that repeatedly asks the user to enter a height in the format feet’inches" (like
+# 5'11" or 6'3". The user indicates they are done entering heights by entering done. The
+# program should return a count of how many 4-footers, 5-footers, 6-footers, and 7-footers
+# were entered.
+
 four_footers = 0
 five_footers = 0
 six_footers = 0
