@@ -1,0 +1,20 @@
+from random import randint
+
+item = 0
+count = 0
+
+for i in range(10):
+    num1 = randint(1, 15)
+    num2 = randint(1, 15)
+    answer = num1 * num2
+    item += 1
+    print("Question", item, ":", num1, "x", num2, "?")
+    a = int(input("Your answer :"))
+    if a == answer:
+        print("Your answer is correct!")
+        count += 1
+    else:
+        print("Your answer is wrong. Correct answer is:", answer)
+
+sum = count
+print("You got", sum, "correct answers!")
