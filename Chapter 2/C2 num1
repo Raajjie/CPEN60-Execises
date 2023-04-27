@@ -1,0 +1,4 @@
+my_name = str("Sherlywin V. Bongalon")
+
+for i in range(100):  # Use for loop to iterate the name 100 times
+    print(my_name)
