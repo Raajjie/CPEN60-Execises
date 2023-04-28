@@ -4,8 +4,8 @@
 # Get name from user
 name = input("Enter your name: ")
 
-rows = 100
-columns = 1
+rows = 35
+columns = 35
 
 # Fill screen with name
 for i in range(rows):
