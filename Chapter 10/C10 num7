@@ -1,0 +1,4 @@
+num = [1]
+for i in range(2,101):
+    num.append(int("1" * i))
+print(num)
