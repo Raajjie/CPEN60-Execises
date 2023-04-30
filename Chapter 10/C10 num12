@@ -1,0 +1,22 @@
+def palindrome(n):
+    return str(n) == str(n)[::-1]
+
+
+def upside_down(n):
+    ud_digits = ['0', '1', '6', '8', '9']
+    s = str(n)
+    for i in range(len(s)):
+        if s[i] not in ud_digits:
+            return False
+        if s[i] == '6' and s[len(s) - 1 - i] != '9':
+            return False
+        elif s[i] == '9' and s[len(s) - 1 - i] != '6':
+            return False
+        elif s[i] != s[len(s) - 1 - i]:
+            return False
+    return True
+
+
+for i in range(1, 100000):
+    if palindrome(i) and upside_down(i):
+        print(i)
