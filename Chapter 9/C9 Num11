@@ -1,0 +1,14 @@
+import random
+
+grid = [[0] * 5 for i in range(5)]  # List of 5x5 zeroes
+
+one = 10  # Change exactly ten of the zeroes into ones
+while one > 0:  # Loop the process of randomly choose ten zeroes in the grid to be replaced by 1
+    row = random.randint(0, 4)
+    col = random.randint(0, 4)
+    if grid[row][col] == 0:
+        grid[row][col] = 1
+        one -= 1
+
+for row in grid:
+    print(row)
