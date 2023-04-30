@@ -1,0 +1,18 @@
+def reverse(n):
+    return int(str(n)[::-1])
+
+
+def palindrome(n):
+    return str(n) == str(n)[::-1]
+
+
+for i in range(10, 100):
+    count = 0
+    num = i
+    while count < 21:
+        num += reverse(num)
+        count += 1
+        if palindrome(num):
+            break
+    if count >= 21:
+        print("number", i, end=' ')
