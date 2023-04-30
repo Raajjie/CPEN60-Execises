@@ -1,0 +1,41 @@
+import random
+
+player_score = 0
+computer_score = 0
+options = ['rock', 'paper', 'scissors']
+
+rounds = 0
+while player_score < 3 and computer_score < 3 and rounds < 5:  # Loop until the program has not met the condition
+    rounds += 1
+    print("Round", rounds)
+    player_move = input("Enter rock, paper, or scissors: ").lower()
+    computer_move = random.choice(options)
+    print("Computer chose: ", computer_move)
+
+    if player_move == computer_move:  # If elif condition for the result of each round
+        print("It is a tie!")
+    elif player_move == "rock" and computer_move == "scissors":
+        print("You earned a score!")
+        player_score += 1
+    elif player_move == "paper" and computer_move == "rock":
+        print("You earned a score!")
+        player_score += 1
+    elif player_move == "scissors" and computer_move == "paper":
+        print("You earned a score!")
+        player_score += 1
+    else:
+        print("Computer earned a score!")
+        computer_score += 1
+    print()
+
+if player_score == 3 or computer_score == 3:  # If either score reaches 3, break the loop and print the ff
+    print("THE MATCH IS OVER")
+
+print("Your score is:", player_score)
+print("Computer score is:", computer_score)
+
+
+if player_score > computer_score:
+    print("Congratulations! You won!")
+else:
+    print("Sorry, you lose.")
