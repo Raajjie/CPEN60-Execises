@@ -1,0 +1,18 @@
+integers = [0, 0, 2, 0, 0, 0, 0]
+
+i_index = 0
+
+nonzero_num = False  # Flag variable
+
+while i_index < len(integers):  # Loop through the list to find the first nonzero
+    if integers[i_index] != 0:
+        integers[i_index] = 1
+        nonzero_num = True
+        break
+    else:
+        i_index += 1
+
+if not nonzero_num:
+    print("There are no nonzero entries")
+else:
+    print("First nonzero has been changed. Updated list is", integers)
